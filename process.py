@@ -62,6 +62,11 @@ timeend('dfsdot load (fillna)')
 timestart('dfsdot sanitize')
 dfsdot_raw['SCIENTIFIC_NAME'] = dfsdot_raw['SCIENTIFIC_NAME'].fillna('')
 dfsdot_raw['COMMON_NAME'] = dfsdot_raw['COMMON_NAME'].fillna('')
+dfsdot_raw = dfsdot_raw[
+    (dfsdot_raw['SCIENTIFIC_NAME'] != 'Unknown')
+    & (dfsdot_raw['SCIENTIFIC_NAME'] != 'Planting Site')
+    & (dfsdot_raw['SCIENTIFIC_NAME'] != 'Prunus sp.') # the genus is too broad to determine interbreedability, so we exclude it
+]
 timeend('dfsdot sanitize')
 
 # ---------------------------------------------------------------------------------------------------------------------
@@ -152,4 +157,19 @@ def is_indigenous(scientificname: str, locality: str):
 # =====================================================================================================================
 
 timestart('analysis')
+unknown_indigenous = []
+hits = 0
+tries = 0
+name_counts = dfsdot['BREEDING_SCIENTIFIC_NAME'].value_counts()
+for name, count in name_counts.items():
+    indigenous = is_indigenous(name, 'Washington')
+    tries += 1
+    if indigenous == 'Unknown':
+        print(f'{name} ({count}) -> {indigenous}')
+        unknown_indigenous.append(name)
+        if len(unknown_indigenous) > 10:
+            break
+    else:
+        hits += 1
+print(f'hits: {hits} out of {tries} (out of total set of {len(name_counts)})')
 timeend('analysis')
