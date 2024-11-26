@@ -1,5 +1,15 @@
+# SDOT Trees Dataset
 SDOT_Trees_CDL_*.csv
-wcvp_dwca/
 
-.ipynb_checkpoints/
+# WCVP DWCA Dataset
+wcvp_dwca.zip
+wcvp_replacementNames.csv
+wcvp_taxon.csv
+wcvp_distribution.csv
+meta.xml
+eml.xml
+
+# Python/Jupyter
 /venv/
+.ipynb_checkpoints/
+__pycache__/
