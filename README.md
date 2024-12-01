@@ -11,6 +11,20 @@ You can download it [on the WCVP file server](http://sftp.kew.org/pub/data-repos
 
 <!-- clean this up when I have a complete idea of which datasets I'll use -->
 
+## Reprocessing
+
+After downloading and extracting the referenced datasets, you should have the following extra files in the project root:
+
+* `SDOT_Trees_CDL_20241119.csv`
+* `wcvp_dwca.zip`
+  - `eml.xml`
+  - `meta.xml`
+  - `wcvp_distribution.csv`
+  - `wcvp_replacementNames.csv`
+  - `wcvp_taxon.csv`
+
+To generate `data/trees_of_seattle.csv` again from source files, run `prepare_trees_of_seattle_csv.py` after downloading the SDOT and WCVP datasets.
+
 ## Citations
 
 ```
