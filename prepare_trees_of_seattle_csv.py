@@ -15,15 +15,6 @@ pairs = [
     ('Acer truncatum x A platanoides', 'Acer truncatum var. platanoides'),
 ]
 
-scientificnames, scientificnames_clean = zip(*pairs)
-alternative_scientific_names = pd.DataFrame({
-    'scientificname': scientificnames,
-    'scientificname_clean': scientificnames_clean,
-})
-print(alternative_scientific_names)
-import sys
-sys.exit(0)
-
 df = pd.DataFrame()
 df['scientificname'] = sdot.dfsdot['SCIENTIFIC_NAME']
 wcvp.assert_all_scientificnames_values_have_one_establishment_means_in_locality(df, 'Washington')
