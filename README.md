@@ -6,11 +6,14 @@ Please see the following notebooks containing the analysis:
 
 * [Indigenous Trees](./indigenous_trees.ipynb)
 
-Please see the following notebooks containing general notes about the datasets:
+Please see the following notebooks containing general notes about the primary datasets:
 
 * [Explore SDOT](./explore_sdot.ipynb)
-* [Explore Trees](./explore_sdot.ipynb)
 * [Explore WCVP](./explore_wcvp.ipynb)
+
+Please see the following notebooks containing general notes about the derived datasets:
+
+* [Explore Trees](./explore_sdot.ipynb)
 
 You can find the SDOT dataset on the [Seattle GeoData SDOT Trees Page](https://data-seattlecitygis.opendata.arcgis.com/datasets/sdot-trees/explore).
 Download the CSV version to use it with the code included in this repository.
