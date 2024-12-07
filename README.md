@@ -36,8 +36,6 @@ To generate `data/trees_of_seattle.csv` again from source files, run `prepare_tr
 
 ## Citations
 
-```
 SDOT Trees (2024). "SDOT Trees. Version 2024.11.19. Published on the Internet; https://data-seattlecitygis.opendata.arcgis.com/datasets/sdot-trees/explore. Accessed on: 2024.11.19"
 
 WCVP (2024). "Govaerts R (ed.). 2024. WCVP: World Checklist of Vascular Plants. Facilitated by the Royal Botanic Gardens, Kew. [WWW document] URL http://sftp.kew.org/pub/data-repositories/WCVP/ [accessed 21 May 2024]."
-```
