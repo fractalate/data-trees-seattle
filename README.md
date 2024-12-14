@@ -49,7 +49,7 @@ WCVP (2024). "Govaerts R (ed.). 2024. WCVP: World Checklist of Vascular Plants. 
   - Tony Perodeau (2006), [https://commons.wikimedia.org/wiki/File:Acer_macrophyllum_1199.jpg?uselang=en](https://commons.wikimedia.org/wiki/File:Acer_macrophyllum_1199.jpg?uselang=en), Public Domain
 * [media/acer_macrophyllum/Acer_macrophyllum_3158.jpg](./media/acer_macrophyllum/Acer_macrophyllum_3158.jpg) - Big Leaf Maple Seeds
   - Walter Siegmund (2004), [https://commons.wikimedia.org/wiki/File:Acer_macrophyllum_3158.jpg](https://commons.wikimedia.org/wiki/File:Acer_macrophyllum_3158.jpg), CC BY-SA 3.0
-* [media/acer_macrophyllum/Bigleaf_maple_(Acer_macrophyllum)_closeup_of_flowers.jpg](./media/acer_macrophyllum/Bigleaf_maple_(Acer_macrophyllum)_closeup_of_flowers.jpg)
+* [media/acer_macrophyllum/Bigleaf_maple_(Acer_macrophyllum)_closeup_of_flowers.jpg](./media/acer_macrophyllum/Bigleaf_maple_(Acer_macrophyllum)_closeup_of_flowers.jpg) - Big Leaf Maple Flowers
   - Kollibri1969 (2024), [https://commons.wikimedia.org/wiki/File:Bigleaf_maple_(Acer_macrophyllum)_closeup_of_flowers.jpg](https://commons.wikimedia.org/wiki/File:Bigleaf_maple_(Acer_macrophyllum)_closeup_of_flowers.jpg), CC BY-SA 4.0
 * [media/acer_macrophyllum/Acer_macrophyllum_kz06.jpg](./media/acer_macrophyllum/Acer_macrophyllum_kz06.jpg) - Big Leaf Maple Bark
   - Krzysztof Ziarnek, Kenraiz (2020), [https://commons.wikimedia.org/wiki/File:Acer_macrophyllum_kz06.jpg](https://commons.wikimedia.org/wiki/File:Acer_macrophyllum_kz06.jpg), CC BY-SA 4.0
