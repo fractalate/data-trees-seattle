@@ -1,7 +1,7 @@
 {
-  "version": "2",
-  "record_count": 246378,
-  "discarded_record_count": 8332,
-  "discarded_nonliving_trees_record_count": 6936,
-  "discarded_unknown_trees_record_count": 1396
+  "version": "3",
+  "record_count": 198772,
+  "discarded_record_count": 55938,
+  "discarded_nonliving_trees_record_count": 55215,
+  "discarded_unknown_trees_record_count": 723
 }

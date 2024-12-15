@@ -54,6 +54,7 @@ dfsdot_size_before = len(dfsdot)
 dfsdot = dfsdot[
     (dfsdot['SCIENTIFIC_NAME'] != 'Planting Site')
     & (dfsdot['SCIENTIFIC_NAME'] != 'stump')
+    & (dfsdot['CURRENT_STATUS'] == 'INSVC')
 ]
 discarded_nonliving_trees_record_count = dfsdot_size_before - len(dfsdot)
 discarded_record_count += discarded_nonliving_trees_record_count
@@ -98,7 +99,7 @@ print(f'Saved {len(trees)} records to {trees_csv}')
 trees_csv_metadata_json = 'data/trees_of_seattle.csv.metadata.json'
 with open(trees_csv_metadata_json, 'w') as fout:
     fout.write(json.dumps({
-        'version': '2',
+        'version': '3',
         'record_count': len(trees),
         'discarded_record_count': discarded_record_count,
         'discarded_nonliving_trees_record_count': discarded_nonliving_trees_record_count,
