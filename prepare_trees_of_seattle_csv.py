@@ -28,7 +28,15 @@ print('Checks passed!')
 
 # We can do this because of the call to wcvp.assert_all_scientificnames_values_have_one_establishment_means_in_locality()
 dftaxon = wcvp.get_dftaxon_for_locality('Washington')
-dftaxon['indigenous'] = dftaxon.apply(lambda x: x['locality'] == 'Washington' and x['establishmentmeans'] != 'introduced', axis=1)
+dftaxon['indigenous'] = dftaxon.apply(
+    lambda x: (
+        x['locality'] == 'Washington' and x['establishmentmeans'] != 'introduced'
+        # Acer negundo is not native to Washington. See:
+        # https://burkeherbarium.org/imagecollection/taxon.php?Taxon=Acer%20negundo
+        and x['scientificname'] != 'Acer negundo'
+    ),
+    axis=1,
+)
 dftaxon = dftaxon[['scientificname', 'locality', 'indigenous']]
 dftaxon = dftaxon.drop_duplicates()
 
@@ -75,7 +83,7 @@ print(f'Total: discarded {discarded_record_count} ({discarded_record_count / dfs
 print(f'Merging {len(dfsdot)} SDOT trees records with {len(dftaxon)} WCVP taxonomy records...')
 
 trees = pd.merge(
-    dfsdot[['OBJECTID', 'SCIENTIFIC_NAME', 'GENUS', 'x', 'y']],
+    dfsdot[['OBJECTID', 'SCIENTIFIC_NAME', 'GENUS', 'CONDITION_RATING', 'x', 'y']],
     dftaxon,
     left_on='SCIENTIFIC_NAME',
     right_on='scientificname',
@@ -87,7 +95,8 @@ trees['local'] = trees['locality'] == 'Washington'
 trees['scientificname'] = trees['SCIENTIFIC_NAME']
 trees['genus'] = trees['GENUS']
 trees['objectid'] = trees['OBJECTID']
-trees = trees[['objectid', 'scientificname', 'genus', 'local', 'indigenous', 'x', 'y']]
+trees['conditionrating'] = trees['CONDITION_RATING']
+trees = trees[['objectid', 'scientificname', 'genus', 'local', 'indigenous', 'conditionrating', 'x', 'y']]
 
 assert len(trees) == len(dfsdot)
 
@@ -99,7 +108,7 @@ print(f'Saved {len(trees)} records to {trees_csv}')
 trees_csv_metadata_json = 'data/trees_of_seattle.csv.metadata.json'
 with open(trees_csv_metadata_json, 'w') as fout:
     fout.write(json.dumps({
-        'version': '3',
+        'version': '4',
         'record_count': len(trees),
         'discarded_record_count': discarded_record_count,
         'discarded_nonliving_trees_record_count': discarded_nonliving_trees_record_count,
