@@ -2,9 +2,10 @@
 
 Analysis of the Seattle Department of Transportation (SDOT) Trees dataset. This project also relies on the World Checklist of Vascular Plants (WCVP) dataset for taxonomic and geographic distribution information.
 
-Please see the following notebooks containing the analysis:
+Please see the following documents containing the analysis:
 
-* [Indigenous Trees](./indigenous_trees.ipynb)
+* [Indigenous Trees (Notebook)](./indigenous_trees.ipynb)
+* [Meet the Indigenous Trees of Seattle](./indigenous_trees.md)
 
 Please see the following notebooks containing general notes about the primary datasets:
 
