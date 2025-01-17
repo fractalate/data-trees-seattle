@@ -43,14 +43,3 @@ To generate `data/trees_of_seattle.csv` again from source files, run `prepare_tr
 SDOT Trees (2024). "SDOT Trees. Version 2024.11.19. Published on the Internet; https://data-seattlecitygis.opendata.arcgis.com/datasets/sdot-trees/explore. Accessed on: 2024.11.19"
 
 WCVP (2024). "Govaerts R (ed.). 2024. WCVP: World Checklist of Vascular Plants. Facilitated by the Royal Botanic Gardens, Kew. [WWW document] URL http://sftp.kew.org/pub/data-repositories/WCVP/ [accessed 21 May 2024]."
-
-### Media
-
-* [media/acer_macrophyllum/Acer_macrophyllum_1199.jpg](./media/acer_macrophyllum/Acer_macrophyllum_1199.jpg) - Big Leaf Maple Leaves
-  - Tony Perodeau (2006), [https://commons.wikimedia.org/wiki/File:Acer_macrophyllum_1199.jpg?uselang=en](https://commons.wikimedia.org/wiki/File:Acer_macrophyllum_1199.jpg?uselang=en), Public Domain
-* [media/acer_macrophyllum/Acer_macrophyllum_3158.jpg](./media/acer_macrophyllum/Acer_macrophyllum_3158.jpg) - Big Leaf Maple Seeds
-  - Walter Siegmund (2004), [https://commons.wikimedia.org/wiki/File:Acer_macrophyllum_3158.jpg](https://commons.wikimedia.org/wiki/File:Acer_macrophyllum_3158.jpg), CC BY-SA 3.0
-* [media/acer_macrophyllum/Bigleaf_maple_(Acer_macrophyllum)_closeup_of_flowers.jpg](./media/acer_macrophyllum/Bigleaf_maple_(Acer_macrophyllum)_closeup_of_flowers.jpg) - Big Leaf Maple Flowers
-  - Kollibri1969 (2024), [https://commons.wikimedia.org/wiki/File:Bigleaf_maple_(Acer_macrophyllum)_closeup_of_flowers.jpg](https://commons.wikimedia.org/wiki/File:Bigleaf_maple_(Acer_macrophyllum)_closeup_of_flowers.jpg), CC BY-SA 4.0
-* [media/acer_macrophyllum/Acer_macrophyllum_kz06.jpg](./media/acer_macrophyllum/Acer_macrophyllum_kz06.jpg) - Big Leaf Maple Bark
-  - Krzysztof Ziarnek, Kenraiz (2020), [https://commons.wikimedia.org/wiki/File:Acer_macrophyllum_kz06.jpg](https://commons.wikimedia.org/wiki/File:Acer_macrophyllum_kz06.jpg), CC BY-SA 4.0
