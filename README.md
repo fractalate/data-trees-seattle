@@ -1,4 +1,4 @@
-# Seattle Department of Transportation Trees
+# Trees of Seattle Data Analysis and Visualization 
 
 Analysis of the Seattle Department of Transportation (SDOT) Trees dataset. This project also relies on the World Checklist of Vascular Plants (WCVP) dataset for taxonomic and geographic distribution information.
 
